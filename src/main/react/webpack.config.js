@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
     entry: './app/index.js',
     output: {
-        path: path.resolve('../resources/dist'),
+        path: path.resolve('../resources/static/dist'),
         filename: 'index_bundle.js',
     },
     module: {
@@ -33,7 +33,7 @@ module.exports = {
     },
     mode: 'production',
     devServer: {
-        contentBase: path.join(__dirname, '../resources/dist'),
+        contentBase: path.join(__dirname, '../resources/static/dist'),
         compress: true,
         port: 8080,
         writeToDisk: true
